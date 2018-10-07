@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route('/')
 def root_page():
 
-    return redirect("http://localhost:5000/335315")
+    return redirect("https://run-router.herokuapp.com/335315")
 
 @app.route('/<location_key>', methods=['GET', 'POST'])
 def show(location_key):
@@ -15,7 +15,7 @@ def show(location_key):
     if request.method == 'POST':
         req = request.form.to_dict()
         search_city = weather_data.search_location(weather_data.API_KEY, req["name"])
-        return redirect("http://localhost:5000/" + search_city["Key"])
+        return redirect("https://run-router.herokuapp.com/" + search_city["Key"])
 
     loc_city = weather_data.search_location_from_key(weather_data.API_KEY, location_key)
     curr_con = weather_data.current_conditions(weather_data.API_KEY, location_key)
