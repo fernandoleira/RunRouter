@@ -1,0 +1,70 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------- Header ---------- */
+
+header {
+  padding-bottom: 10px;
+  border-bottom: 2px solid #888;
+}
+
+header img {
+  position: relative;
+  top: 8px;
+  width: 250px;
+}
+
+header .input-group {
+  margin-top: 20px;
+}
+
+/* ---------- Main ------------- */
+
+.main {
+  padding: 45px 15px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #fff;
+  font-family: 'Cambria';
+  text-shadow: 2px 2px #888;
+}
+
+.main .jumbotron {
+  background-color: rgba(2, 2, 2, 0.7);
+}
+
+/* ---------- Weather ---------- */
+
+.weather {
+  border-top: 2px solid #888;
+  padding: 20px 0px;
+  font-size: 18px;
+  text-align: center;
+  font-family: 'Cambria';
+}
+
+.borderless > tbody > tr > td,
+.borderless > tbody > tr > th,
+.borderless > thead > tr > td,
+.borderless > thead > tr > th {
+  border: none;
+}
+
+/* ---------- Map -------------- */
+.map-area {
+  border-top: 2px solid #888;
+  font-family: 'Cambria';
+}
+
+.map-area h2 {
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+#map {
+  height: 600px;
+}
