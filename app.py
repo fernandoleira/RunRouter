@@ -4,7 +4,7 @@ import weather_data
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/', methods=['GET'])
 def root_page():
 
     return redirect("https://run-router.herokuapp.com/335315")
