@@ -29,7 +29,7 @@ pyparsing==2.2.2
 python-dateutil==2.7.3
 pytz==2018.5
 requests==2.19.1
-rsa==4.0
+rsa==4.1
 scipy==1.1.0
 seaborn==0.9.0
 six==1.11.0
